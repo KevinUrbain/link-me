@@ -356,7 +356,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div class="card-body p-0">
 
-                            <div class="preview-container text-center p-5 bg-preview d-flex flex-column align-items-center"
+                            <div class="preview-container text-center p-5 d-flex flex-column align-items-center"
                                 style="background-color: <?= isset($userProfile['theme_color_bg']) ? htmlspecialchars($userProfile['theme_color_bg']) : '' ?>;">
 
                                 <img src="<?= BASE_URL . htmlspecialchars($avatarSrc) ?>"
