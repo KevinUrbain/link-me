@@ -1,0 +1,2 @@
+ERROR MSG : SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for localhos failed: Hôte inconnu. , ERROR CODE : 2002, DATE : 2026-02-08 20:32:57
+ERROR MSG : SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for localhos failed: Hôte inconnu. , ERROR CODE : 2002, DATE : 2026-02-08 20:36:53

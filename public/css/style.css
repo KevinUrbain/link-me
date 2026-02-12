@@ -1,0 +1,464 @@
+/* ============================================
+    VARIABLES CSS
+   ============================================ */
+
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #8b5cf6;
+  --dark-bg: #1e293b;
+  --light-bg: #f8f9fa;
+  --border-color: #e5e7eb;
+}
+
+/* ============================================
+   STYLES GLOBAUX
+   ============================================ */
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+/* ============================================
+   TEXTE GRADIENT
+   ============================================ */
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-light {
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   LANDING PAGE - HERO SECTION
+   ============================================ */
+
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.hero-section .navbar {
+  background: transparent;
+}
+
+.hero-section .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.hero-section .nav-link:hover {
+  color: white;
+}
+
+.hero-section .btn-light {
+  background: white;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.hero-section .btn-light:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   FEATURES SECTION
+   ============================================ */
+
+#features {
+  background: white;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  color: var(--primary-color);
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.cta-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ============================================
+   FORMULAIRES - PAGES LOGIN & REGISTER
+   ============================================ */
+.bg-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.profile-upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-preview {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+}
+
+/* Amélioration des inputs */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+.form-control-lg {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
+/* Validation des formulaires */
+.form-control.is-valid {
+  border-color: #28a745;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+/* ============================================
+   BOUTONS
+   ============================================ */
+
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5558e3 0%, #7c4ddb 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  color: white;
+}
+
+/* ============================================
+   PAGE BUILDER - CONSTRUCTION DE PAGE
+   ============================================ */
+
+/* Conteneur de prévisualisation */
+.preview-container {
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+  min-height: 500px;
+}
+
+/* Carte de lien dans le builder */
+.link-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.link-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.1);
+}
+
+.drag-handle {
+  cursor: move;
+  color: #9ca3af;
+}
+
+.drag-handle:hover {
+  color: var(--primary-color);
+}
+
+/* Bouton de lien dans la prévisualisation */
+.preview-link-btn {
+  background: white;
+  border: 2px solid var(--border-color);
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.preview-link-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Input color personnalisé */
+.form-control-color {
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+}
+
+.form-control-color:hover {
+  border-color: var(--primary-color);
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.card-header {
+  border-bottom: 1px solid var(--border-color);
+  background-color: white;
+  border-radius: 12px 12px 0 0 !important;
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-color {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+
+.badge {
+  padding: 0.35em 0.65em;
+  font-weight: 500;
+}
+
+/* ============================================
+   MODAL
+   ============================================ */
+
+.modal-content {
+  border: none;
+  border-radius: 12px;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border-color);
+}
+
+/* ============================================
+   UTILITAIRES
+   ============================================ */
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.shadow-sm {
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+/* Position sticky */
+.position-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 40px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1rem;
+  }
+
+  .position-sticky {
+    position: relative;
+  }
+
+  .link-card .d-flex {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .link-card .drag-handle {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .display-5 {
+    font-size: 2rem;
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Transition douce pour tous les éléments interactifs */
+a,
+button,
+.btn,
+.form-control,
+.card {
+  transition: all 0.2s ease;
+}
+
+/* ============================================
+   SCROLLBAR PERSONNALISÉE
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* ============================================
+   FOCUS VISIBLE
+   ============================================ */
+
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .navbar,
+  .btn,
+  .modal,
+  footer {
+    display: none;
+  }
+}
