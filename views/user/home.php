@@ -22,13 +22,24 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php?action=login">Connexion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-light rounded-pill px-4 ms-2"
-                                href="index.php?action=register">S'inscrire</a>
-                        </li>
+                        <?php if (!isset($_SESSION['user'])): ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?action=login">Connexion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-light rounded-pill px-4 ms-2"
+                                    href="index.php?action=register">S'inscrire</a>
+                            </li>
+                        <?php else: ?>
+                            <li class="nav-item">
+                                <a class="btn btn-light rounded-pill px-4 ms-2" href="index.php?action=builder">Créer votre
+                                    LinkMe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-warning rounded-pill px-4 ms-2"
+                                    href="index.php?action=logout">Déconnexion</a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
