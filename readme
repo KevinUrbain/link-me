@@ -1,0 +1,32 @@
+# Project
+
+Link Me est une plateforme permettant aux utilisateurs de créer une page "vitrine" regroupant tous leurs liens importants (Instagram, TikTok, Portfolio, etc.). Cet exercice m'a été proposé par notre formateur.
+
+## Features
+
+- Système d'authentification (login/register) - Hashage des mots de passe
+- Accès à un edit panel pour créer son link tree
+- Personnalisation des couleurs visuelles
+- Ajout de liens de redirection
+
+Pour importer le projet, rendez-vous dans votre terminal :
+
+```bash
+git clone https://github.com/KevinUrbain/link-me.git
+```
+
+## Stack utilisée
+
+- PHP natif
+- MySQL
+  Bootstrap
+
+## Aperçu
+
+![Aperçu du projet MyLink](images/linkme.png)
+![Aperçu du projet MyLink](images/example.png)
+![Aperçu du projet MyLink](images/crud.png)
+
+## License
+
+Kevin Urbain
