@@ -42,7 +42,7 @@ Ce projet a été réalisé dans le cadre d'un exercice de formation.
 - **Langage** : PHP Natif (Pas de framework)
 - **Base de données** : MySQL
 - **Frontend** : Bootstrap 5, CSS3
-- **Architecture** : Routeur simple (public/index.php) -> inclusion d'une vue selon la dynamique de l'URL
+- **Architecture** : Routeur simple (public/index.php) ➡️ inclusion d'une vue selon la dynamique de l'URL
 
 ---
 
