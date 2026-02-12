@@ -241,7 +241,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <label class="form-label fw-semibold">Photo de profil</label>
                                 <div class="d-flex align-items-center gap-3">
                                     <?php
-                                    $avatarSrc = !empty($userProfile['avatar_path']) ? $userProfile['avatar_path'] : 'https://via.placeholder.com/80?text=IMG';
+                                    $avatarSrc = !empty($userProfile['avatar_path']) ? $userProfile['avatar_path'] : 'uploads/avatars/user_default.png';
                                     ?>
                                     <img src="<?= BASE_URL . htmlspecialchars($avatarSrc) ?>" alt="Avatar"
                                         class="rounded-circle" width="80" height="80" style="object-fit:cover;">
